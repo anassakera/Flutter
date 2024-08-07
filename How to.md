@@ -1,7 +1,9 @@
 ## How to change the default Flutter application icon :
 
 1 -  you should have "assets\images\logo.png"
+
 2 - paste this command in the VSCode Terminal "flutter pub add flutter_launcher_icons"
+
 3 - paste the following script in "pupspect.yaml" and change "image_path" :
 
 ```yaml
