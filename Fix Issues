@@ -1,4 +1,4 @@
-Fix_issue_1 : 
+Fix_issue_1 :
 
 The include file 'package:flutter_lints/flutter.yaml' in 'C:\Users\anass\Desktop\New folder\rayonnage_fil\analysis_options.yaml' can't be found when analyzing 'C:\Users\anass\Desktop\New folder\rayonnage_fil'.
 
