@@ -22,7 +22,7 @@ flutter pub get
 flutter pub run flutter_launcher_icons
 ```
 
-# Exporting Tables from phpMyAdmin
+# How to Exporting Tables from phpMyAdmin
 
 ## Step 1: Access phpMyAdmin in cPanel
 
