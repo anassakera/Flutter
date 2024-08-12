@@ -46,3 +46,28 @@ flutter pub run flutter_launcher_icons
 ## Step 4: Download the Exported File
 
 The export will start, and depending on your settings, it will either download directly or display the SQL code that you can copy.
+
+
+# إزالة Default Splash Screen في تطبيق Flutter
+
+لإزالة Default Splash Screen في تطبيق Flutter الخاص بك، اتبع الخطوات التالية:
+
+## 1. إزالة ملفات splash screen الافتراضية
+
+- في مجلد مشروع Flutter الخاص بك، انتقل إلى `android/app/src/main/res/`.
+- ستجد هنا مجلدات مختلفة تحمل أسماء مثل `drawable-v21` و `mipmap-hdpi` وما إلى ذلك.
+- داخل كل من هذه المجلدات، احذف ملف `launch_background.xml`.
+
+## 2. تحديث ملف styles.xml
+
+- في نفس المسار `android/app/src/main/res/`، افتح مجلد `values`.
+- داخل هذا المجلد، افتح ملف `styles.xml`.
+- ابحث عن سمة `LaunchTheme` وقم بتعديلها كما يلي:
+
+```xml
+<style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+    <!-- This splash screen -->
+    <item name="android:windowBackground">@drawable/launch_screen</item>
+</style>
+
+
