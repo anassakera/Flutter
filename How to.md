@@ -47,27 +47,21 @@ flutter pub run flutter_launcher_icons
 
 The export will start, and depending on your settings, it will either download directly or display the SQL code that you can copy.
 
+# How to Restore Default Scale (Window Size) in VSCode
 
-# إزالة Default Splash Screen في تطبيق Flutter
+To restore the default scale or size of the window in Visual Studio Code, you can reset the zoom level to its default value. Here's how you can do it:
 
-لإزالة Default Splash Screen في تطبيق Flutter الخاص بك، اتبع الخطوات التالية:
+## Option 1: Using Keyboard Shortcuts
+- **Reset Zoom**: Press `Ctrl + 0` (or `Cmd + 0` on macOS) to reset the zoom level to the default (100%).
 
-## 1. إزالة ملفات splash screen الافتراضية
+## Option 2: Using the Command Palette
+1. Open the Command Palette by pressing `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS).
+2. Type `View: Reset Zoom` and select it. This will restore the zoom level to the default.
 
-- في مجلد مشروع Flutter الخاص بك، انتقل إلى `android/app/src/main/res/`.
-- ستجد هنا مجلدات مختلفة تحمل أسماء مثل `drawable-v21` و `mipmap-hdpi` وما إلى ذلك.
-- داخل كل من هذه المجلدات، احذف ملف `launch_background.xml`.
+## Option 3: Editing Settings Directly
+1. Open the settings by pressing `Ctrl + ,` (or `Cmd + ,` on macOS).
+2. Search for "zoom" in the search bar.
+3. Set the "Window: Zoom Level" to `0` to restore the default size.
 
-## 2. تحديث ملف styles.xml
-
-- في نفس المسار `android/app/src/main/res/`، افتح مجلد `values`.
-- داخل هذا المجلد، افتح ملف `styles.xml`.
-- ابحث عن سمة `LaunchTheme` وقم بتعديلها كما يلي:
-
-```xml
-<style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
-    <!-- This splash screen -->
-    <item name="android:windowBackground">@drawable/launch_screen</item>
-</style>
-
+This will restore Visual Studio Code to its default scaling and size.
 
