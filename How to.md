@@ -65,3 +65,13 @@ To restore the default scale or size of the window in Visual Studio Code, you ca
 
 This will restore Visual Studio Code to its default scaling and size.
 
+
+# How to connect your Device with scrcpy :
+```powershell
+adb devices
+adb -s 112111541Q011813 tcpip 5555
+adb connect 192.168.1.18:5555
+scrcpy -s 192.168.1.18:5555
+```
+
+
