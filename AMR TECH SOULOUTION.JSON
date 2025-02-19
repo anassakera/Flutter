@@ -1,0 +1,83 @@
+{
+  "company": {
+    "name": "AMR TECH SOLUTION SARL",
+    "capital": "100 000.00 MAD",
+    "address": "LOT KOUNOUZ 26 ETG 2 BUR N 3 TIT MELLIL CASA",
+    "contact": {
+      "tel": "06 66 12 92 72",
+      "email": "amrtechso@gmail.com"
+    },
+    "registration": {
+      "if": "66185049",
+      "rc": "656247",
+      "tp": "37126396",
+      "cnss": "5931778",
+      "ice": "003649932000053",
+      "rib": "022 797 000 330 002 860 756 016"
+    }
+  },
+  "document": {
+    "type": "DEVIS",
+    "number": "0004/2025",
+    "date": "18/02/2025",
+    "client": "COLLEGE",
+    "location": "Casablanca"
+  },
+  "items": [
+    {
+      "id": 1,
+      "designation": "CABLE ARMEE 4X10",
+      "quantity": 90,
+      "unit_price": 70.00,
+      "total": 6300.00
+    },
+    {
+      "id": 2,
+      "designation": "TUBE ORANGE 21",
+      "quantity": 90,
+      "unit_price": 5.00,
+      "total": 450.00
+    },
+    {
+      "id": 3,
+      "designation": "BOITE ETANCHE 24/18 LAP",
+      "quantity": 2,
+      "unit_price": 25.00,
+      "total": 50.00
+    },
+    {
+      "id": 4,
+      "designation": "SAC DE SABLE",
+      "quantity": 6,
+      "unit_price": 15.00,
+      "total": 90.00
+    },
+    {
+      "id": 5, 
+      "designation": "SAC DE CAILLASSE",
+      "quantity": 6,
+      "unit_price": 15.00,
+      "total": 90.00
+    },
+    {
+      "id": 6,
+      "designation": "SAC DE SIMA 35",
+      "quantity": 2,
+      "unit_price": 80.00,
+      "total": 160.00
+    },
+    {
+      "id": 7,
+      "designation": "MAIN D'ŒUVRE",
+      "quantity": 1,
+      "unit_price": 1500.00,
+      "total": 1500.00
+    }
+  ],
+  "totals": {
+    "subtotal": 8640.00,
+    "tva": 1728.00,
+    "total": 10368.00,
+    "total_text": "DIX MILLE TROIS CENT SOIXANTE HUIT DHS"
+  }
+}
