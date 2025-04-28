@@ -157,3 +157,79 @@
     *   **تمرين 1:** اكتب برنامج Dart يحسب مؤشر كتلة الجسم (BMI). عرف متغيرات للطول بالمتر (`double height`) والوزن بالكيلوجرام (`double weight`). المعادلة: BMI = weight / (height * height). اطبع قيمة BMI.
     *   **تمرين 2:** عرف متغيرًا لنص يحتوي على اسمك الأول والأخير. استخدم دوال النصوص في Dart (ابحث عن `string methods dart`) مثل `length` (للطول)، `toUpperCase()` (لتحويله لحروف كبيرة)، `toLowerCase()`، و `contains()` (للتحقق من احتواء النص على كلمة معينة). اطبع نتائج هذه الدوال.
     *   "بداية رائعة في عالم Dart! اليوم جهزنا بيئتنا وعرفنا الأساسيات. في الحصة القادمة، سنتعمق أكثر في Dart ونتعلم عن الدوال، الجمل الشرطية، والحلقات، قبل أن ننتقل إلى Flutter. يعطيكم العافية!"
+  
+    *   
+---
+    # ملخص الدرس
+    ``` dart
+    // click on "alt+shift+F"
+// هي الدالة للي كاتخدم لية الكود ديالي
+void main() {
+  // كانصاوب المتغير ديالي بهد الطريقة
+  String name = "anass"; // متغير كايقبل غير النصوص
+  print(name);
+
+  var age = 23; //  متغير أوتوماتيكي كايقبل جميع أنواع البيانات
+  print(age);
+
+  double mySolde =
+      34.5; // متغير كايقبل غير الأعداد للي فيهم الفاصلة و الأعداد الصحيحة
+  print(mySolde);
+
+  int price = 450; // متغير كايقبل غير الأعداد الصحيحة فقط
+  print(price);
+
+  bool lamp = true; // متغير منطقى كايقبل غير صحيح أو خطأ
+  print(lamp);
+
+  String greeting = 'Hello, $name'; // طريقة إضافة محتوى متغير إلى متغير جديد
+  print(greeting);
+
+  String futureAge =
+      'Next year, age will be ${age + 1}'; // طريقة كتابة تعبير داخل المتغير ديالي
+  print(futureAge);
+
+  // ولكن تقدر تبدل نوع البيانات غير من <>
+  List<String> colors = [
+    'Red',
+    'Green',
+    'Blue',
+  ]; // كانصاوب قائمة كاتقبل غير النصوص
+  print(colors);
+
+  List data = [
+    14,
+    'Green',
+    33.8,
+    true,
+  ]; // كانصاوب قائمة أوتوماتيكية كاتقبل جميع أنواع المتغيرات
+  print(data);
+
+  // كانصاوب مصفوفة ديالي باش نتعامل مع جميع أنواع البيانات
+  Map<String, dynamic> informationsUser = {'name': 'Layla', 'age': 28};
+  print(informationsUser);
+
+  final String appVersion = '1.0.2';
+  print(appVersion);
+  // appVersion = '2.0.0'; // غادي يعطيك Error! حيت final ميمكنش تبدلها
+  print(appVersion);
+
+  const double pi = 3.14159;
+  print(pi);
+  // غالطة! حيت DateTime.now() كتعطيك قيمة فوقت التشغيل
+  DateTime today =DateTime.now(); // غالطة! حيت DateTime.now() كتعطيك قيمة فوقت التشغيل
+  print(today);
+
+  
+  
+  
+  
+  
+  
+  
+  // كانستعملها باش نطبع المتغيرات دياولي
+  print('Donne✅');
+}
+```
+---
+
