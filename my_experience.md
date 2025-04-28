@@ -159,42 +159,41 @@
     *   "بداية رائعة في عالم Dart! اليوم جهزنا بيئتنا وعرفنا الأساسيات. في الحصة القادمة، سنتعمق أكثر في Dart ونتعلم عن الدوال، الجمل الشرطية، والحلقات، قبل أن ننتقل إلى Flutter. يعطيكم العافية!"
   
     *   
----
-    # ملخص الدرس
-    ``` dart
-    // click on "alt+shift+F"
-// هي الدالة للي كاتخدم لية الكود ديالي
+# ملخص الدرس
+
+```dart
+// click on "alt+shift+F"
+
+// هي الدالة اللي كاتخدم لي الكود ديالي
 void main() {
-  // كانصاوب المتغير ديالي بهد الطريقة
+  // كانصاوب المتغير ديالي بهاد الطريقة
   String name = "anass"; // متغير كايقبل غير النصوص
   print(name);
 
-  var age = 23; //  متغير أوتوماتيكي كايقبل جميع أنواع البيانات
+  var age = 23; // متغير أوتوماتيكي كايقبل جميع أنواع البيانات
   print(age);
 
-  double mySolde =
-      34.5; // متغير كايقبل غير الأعداد للي فيهم الفاصلة و الأعداد الصحيحة
+  double mySolde = 34.5; // متغير كايقبل غير الأعداد اللي فيهم الفاصلة
   print(mySolde);
 
-  int price = 450; // متغير كايقبل غير الأعداد الصحيحة فقط
+  int price = 450; // متغير كايقبل غير الأعداد الصحيحة
   print(price);
 
-  bool lamp = true; // متغير منطقى كايقبل غير صحيح أو خطأ
+  bool lamp = true; // متغير منطقي كايقبل صحيح أو خطأ
   print(lamp);
 
-  String greeting = 'Hello, $name'; // طريقة إضافة محتوى متغير إلى متغير جديد
+  String greeting = 'Hello, $name'; // طريقة إضافة محتوى متغير إلى نص جديد
   print(greeting);
 
-  String futureAge =
-      'Next year, age will be ${age + 1}'; // طريقة كتابة تعبير داخل المتغير ديالي
+  String futureAge = 'Next year, age will be ${age + 1}'; // كتابة تعبير داخل المتغير
   print(futureAge);
 
-  // ولكن تقدر تبدل نوع البيانات غير من <>
+  // ولكن تقدر تحدد نوع البيانات اللي غادي يقبلو العناصر ديال الليست
   List<String> colors = [
     'Red',
     'Green',
     'Blue',
-  ]; // كانصاوب قائمة كاتقبل غير النصوص
+  ]; // قائمة كاتقبل غير النصوص
   print(colors);
 
   List data = [
@@ -202,34 +201,27 @@ void main() {
     'Green',
     33.8,
     true,
-  ]; // كانصاوب قائمة أوتوماتيكية كاتقبل جميع أنواع المتغيرات
+  ]; // قائمة كاتقبل جميع أنواع المتغيرات
   print(data);
 
-  // كانصاوب مصفوفة ديالي باش نتعامل مع جميع أنواع البيانات
-  Map<String, dynamic> informationsUser = {'name': 'Layla', 'age': 28};
+  // كانصاوب مصفوفة (Map) باش نخزن بيانات مختلفة بالزوج (مفتاح : قيمة)
+  Map<String, dynamic> informationsUser = {
+    'name': 'Layla',
+    'age': 28
+  };
   print(informationsUser);
 
-  final String appVersion = '1.0.2';
+  final String appVersion = '1.0.2'; // final: قيمة واحدة وماتبدلش
   print(appVersion);
   // appVersion = '2.0.0'; // غادي يعطيك Error! حيت final ميمكنش تبدلها
-  print(appVersion);
 
-  const double pi = 3.14159;
+  const double pi = 3.14159; // const: القيمة خاصها تكون معروفة قبل تشغيل البرنامج
   print(pi);
-  // غالطة! حيت DateTime.now() كتعطيك قيمة فوقت التشغيل
-  DateTime today =DateTime.now(); // غالطة! حيت DateTime.now() كتعطيك قيمة فوقت التشغيل
+
+  // final كاتسمحلك دير متغير بقيمة وقت التشغيل
+  DateTime today = DateTime.now();
   print(today);
 
-  
-  
-  
-  
-  
-  
-  
-  // كانستعملها باش نطبع المتغيرات دياولي
+  // كانستعملها باش نطبع المتغيرات ديالي
   print('Donne✅');
 }
-```
----
-
