@@ -159,7 +159,7 @@
     *   "بداية رائعة في عالم Dart! اليوم جهزنا بيئتنا وعرفنا الأساسيات. في الحصة القادمة، سنتعمق أكثر في Dart ونتعلم عن الدوال، الجمل الشرطية، والحلقات، قبل أن ننتقل إلى Flutter. يعطيكم العافية!"
   
     *   
-# ملخص الدرس
+# ملخص الدرس_1
 
 ```dart
 // click on "alt+shift+F"
@@ -225,3 +225,59 @@ void main() {
   // كانستعملها باش نطبع المتغيرات ديالي
   print('Donne✅');
 }
+```
+# ملخص الدرس_2
+```dart
+void main() {
+  
+
+  // && (AND), || (OR), ! (NOT).
+  
+  bool lamp_is_on = false;
+  bool lamp_is_off = true;
+
+  print("${!lamp_is_on}"); // العكس ديال الشرط ديالي
+  print(" ${lamp_is_on && lamp_is_off}"); // بغيت نجمع 2 شروط أو أكثر
+  print("${lamp_is_on || lamp_is_off}"); // بغيت يتحقق على الأقل شرط 1
+
+  // =, +=, -=, *=, /=, ~/=, %=
+  double age = 30;
+  int pc = 8;
+  age += 1; // زيد لية القيمة 1 على المتغير ديالي
+  age = 40; // خليها كاتساوي
+  age -= 5; // نقص منها 5
+  age *= 2; // ضربها في 2
+  age /= 2; // قسمها على 2
+  pc ~/= 3; // كاتمسح الفاصلة من العدد ديالي
+  pc %= 3;
+  print(pc);
+  print(age);
+
+  int operation1 = 1 + 1; // عملية الجمع
+  print(operation1);
+
+  int operation2 = 2 * 3; // عملية الضرب
+  print(operation2);
+
+  int operation3 = 3 - 1; // عملية الناقص
+  print(operation3);
+
+  double operation4 = 16 / 10; // عملية القسمة
+  print(operation4);
+
+  double operation5 = 7 % 5; // باقي القسمة
+  print(operation5);
+
+  int operation6 = 16 ~/ 10; //  عملية القسمة تعطي دائما عدد صحيح
+  print(operation6);
+
+  //المقارنة: ==, !=, >, <, >=, <=. (لا يوجد === أو !== في Dart، فـ == تتحقق من القيمة).
+
+  var compare1 = 1 == 1; // واش 1 كايساوي 1
+  print(compare1);
+
+  var compare2 = 1 != 1; // واش 1 كايخالف 1
+  print(compare2);
+}
+
+```
