@@ -20,7 +20,6 @@
   ```
   amrtechso.com
   www.amrtechso.com
-  admin.amrtechso.com
   ```
 
 - **رابط GitHub ديال المشروع:**  
