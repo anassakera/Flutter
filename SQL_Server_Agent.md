@@ -21,7 +21,7 @@
 ## 3️⃣ الهندسة - البناء التدريجي
 
 ### **المرحلة الأولى**: بناء نظام تتبع التغييرات (Change Tracking)
-
+``` sql
 -- 📊 جدول تتبع التغييرات (Change Tracking)
 -- المكان: SQL Server (قاعدة البيانات المحلية)
 
@@ -747,7 +747,7 @@ DELIMITER ;
 -- */15 * * * * mysql -u username -p'password' database_name -e "CALL sp_update_daily_sync_stats();"
 -- */30 * * * * mysql -u username -p'password' database_name -e "CALL sp_monitor_sync_health();"
 -- 0 2 * * * mysql -u username -p'password' database_name -e "CALL sp_cleanup_old_sync_data();"
-
+```
 ## 4️⃣ الإشعال - تفعيل النظام فورًا!
 
 ### 🚀 خطوات التشغيل السريع:
