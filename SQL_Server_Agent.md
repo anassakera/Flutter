@@ -21,7 +21,7 @@
 ## 3️⃣ الهندسة - البناء التدريجي
 
 ### **المرحلة الأولى**: بناء نظام تتبع التغييرات (Change Tracking)
-``` sql
+```sql
 -- 📊 جدول تتبع التغييرات (Change Tracking)
 -- المكان: SQL Server (قاعدة البيانات المحلية)
 
@@ -79,9 +79,11 @@ BEGIN
     FROM deleted d
     WHERE NOT EXISTS (SELECT 1 FROM inserted WHERE invoice_id = d.invoice_id);
 END;
+```
 
 ### **المرحلة الثانية**: إجراء مخزن للمزامنة الآمنة (Secure Sync Procedure)
 
+```sql
 -- 🔐 إجراء المزامنة الآمنة (Secure Sync Procedure)
 -- المكان: SQL Server (قاعدة البيانات المحلية)
 
@@ -194,9 +196,11 @@ BEGIN
             EXEC sp_OADestroy @http_response;
     END CATCH;
 END;
+```
 
 ### **المرحلة الثالثة**: PHP API آمن لاستقبال المزامنة
 
+```php
 <?php
 // 📁 المكان: api/sync/receive_sync.php
 // 🔐 API آمن لاستقبال بيانات المزامنة من SQL Server
@@ -388,9 +392,11 @@ function deleteRecord($pdo, $table_name, $record_id) {
     return $stmt->execute([$record_id]);
 }
 ?>
+```
 
 ### **المرحلة الرابعة**: جدولة المزامنة التلقائية (SQL Server Agent Job)
 
+```sql
 -- 📅 وظيفة SQL Server Agent للمزامنة التلقائية
 -- المكان: SQL Server Management Studio > SQL Server Agent > Jobs
 
@@ -530,9 +536,11 @@ BEGIN
     WHERE sync_status = 'F'
     ORDER BY changed_at DESC;
 END;
+```
 
 ### **المرحلة الخامسة**: جدول سجل المزامنة في MySQL
 
+```sql
 -- 📊 جداول المراقبة والسجلات في MySQL
 -- المكان: MySQL Server (قاعدة البيانات على الخادم)
 
